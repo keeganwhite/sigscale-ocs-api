@@ -11,6 +11,7 @@ from datetime import datetime
 @dataclass
 class Amount:
     """Amount with units."""
+
     amount: str
     units: str
 
@@ -18,6 +19,7 @@ class Amount:
 @dataclass
 class ValidFor:
     """Validity period."""
+
     start_date_time: Optional[str] = None
     end_date_time: Optional[str] = None
 
@@ -25,6 +27,7 @@ class ValidFor:
 @dataclass
 class ProductRef:
     """Product reference."""
+
     id: str
     href: Optional[str] = None
 
@@ -32,6 +35,7 @@ class ProductRef:
 @dataclass
 class Bucket:
     """Balance bucket entity."""
+
     id: str
     href: Optional[str] = None
     remained_amount: Optional[Amount] = None
@@ -50,6 +54,7 @@ class Bucket:
 @dataclass
 class BalanceAdjustment:
     """Balance adjustment request."""
+
     product_id: str
     amount: float
     units: str = "cents"

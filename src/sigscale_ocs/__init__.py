@@ -22,7 +22,7 @@ __version__ = "0.1.0"
 __all__ = [
     "OCSClient",
     "OCSAPIError",
-    "AuthenticationError", 
+    "AuthenticationError",
     "BadRequestError",
     "NotFoundError",
     "ServerError",
