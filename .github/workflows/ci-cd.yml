@@ -103,7 +103,7 @@ jobs:
       - name: Download build artifacts
         uses: actions/download-artifact@v4
         with:
-          name: dist-packages
+          name: dist
           path: dist/
 
       - name: Publish to PyPI
