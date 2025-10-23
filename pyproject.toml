@@ -43,7 +43,8 @@ dev = [
     "pytest-cov>=2.12.1",
     "flake8>=3.9.2",
     "mypy>=0.910",
-    "black>=21.5b2"
+    "black>=21.5b2",
+    "types-requests>=2.25.0"
 ]
 
 [tool.setuptools]
