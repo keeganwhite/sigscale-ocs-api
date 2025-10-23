@@ -1,5 +1,10 @@
 # Sigscale OCS Python API Wrapper
 
+[![CI/CD](https://github.com/keeganwhite/sigscale-ocs-api/workflows/CI/CD/badge.svg)](https://github.com/keeganwhite/sigscale-ocs-api/actions)
+[![PyPI version](https://badge.fury.io/py/sigscale-ocs-api.svg)](https://badge.fury.io/py/sigscale-ocs-api)
+[![Python Support](https://img.shields.io/pypi/pyversions/sigscale-ocs-api.svg)](https://pypi.org/project/sigscale-ocs-api/)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
 A Python wrapper for the Sigscale OCS API supporting user signup, data purchases, balance top-ups, and offering management.
 
 ## Features
@@ -25,7 +30,7 @@ pip install sigscale-ocs-api
 Create a `.env` file with your OCS credentials:
 
 ```env
-SIGSCALE_OCS_URL=https://ocs-build.sigscale.org:8096
+SIGSCALE_OCS_URL=https://ocs-build.sigscale.org:8083
 SIGSCALE_OCS_USERNAME=admin
 SIGSCALE_OCS_PASSWORD=admin
 SIGSCALE_OCS_VERIFY_SSL=false
@@ -58,7 +63,7 @@ client = OCSClient()
 
 # Or with explicit credentials
 client = OCSClient(
-    base_url="https://ocs-build.sigscale.org:8096",
+    base_url="https://ocs-build.sigscale.org:8083",
     username="admin",
     password="admin",
     verify_ssl=False
@@ -173,7 +178,7 @@ Base client for API interactions.
 
 ```python
 client = OCSClient(
-    base_url="https://ocs-build.sigscale.org:8096",
+    base_url="https://ocs-build.sigscale.org:8083",
     username="admin",
     password="admin",
     verify_ssl=False
@@ -254,7 +259,7 @@ pip install -e .[dev]
 
 ```bash
 # Set up test credentials
-export SIGSCALE_OCS_URL="https://ocs-build.sigscale.org:8096"
+export SIGSCALE_OCS_URL="https://ocs-build.sigscale.org:8083"
 export SIGSCALE_OCS_USERNAME="admin"
 export SIGSCALE_OCS_PASSWORD="admin"
 export SIGSCALE_OCS_VERIFY_SSL="false"
